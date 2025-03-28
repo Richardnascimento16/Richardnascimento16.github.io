@@ -12,7 +12,7 @@ body{
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 200px;
+    margin-top: 10%;  /* Reduzido para 10% para centralizar mais na tela */
 }
 
 #img_principal{
@@ -26,8 +26,26 @@ body{
     width: 192px;
     height: 40px;
     background-color: greenyellow;
+    border: none; /* Remover a borda para um design mais limpo */
+    transition: background-color 0.3s ease; /* Adiciona transição suave */
 }
 
 #button_principal:hover{
     background-color: green;
+}
+
+@media screen and (max-width: 600px) {
+    #principal {
+        margin-top: 50px;  /* Menos margem no mobile */
+    }
+
+    #img_principal {
+        width: 80px; /* Reduz o tamanho da imagem em dispositivos pequenos */
+        height: 80px;
+    }
+
+    #button_principal {
+        width: 100%; /* Tornar o botão responsivo */
+        height: 45px;
+    }
 }
