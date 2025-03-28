@@ -9,6 +9,6 @@ function required(){
     }else if(senha.value==""){
         alert("campo SENHA vazio");
     }else{
-        window.location.href= "index.html"
+        window.location.href= "home.html"
     }
 }
