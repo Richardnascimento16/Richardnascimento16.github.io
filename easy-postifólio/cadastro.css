@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+#principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 200px;
+}
+
+#img_principal{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+#button_principal{
+    width: 192px;
+    height: 40px;
+    background-color: greenyellow;
+}
+
+#button_principal:hover{
+    background-color: green;
+}
