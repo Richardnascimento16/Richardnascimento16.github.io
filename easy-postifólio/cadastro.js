@@ -11,7 +11,7 @@ function required(event) {
     else if (senha.value === "") {
         alert("Campo SENHA está vazio.");
     }else{
-        window.location.href=("home.html")
+        window.location.href="home.html";
     }
 
 }
