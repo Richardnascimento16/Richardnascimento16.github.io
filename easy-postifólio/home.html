@@ -8,106 +8,176 @@
     <title>Fair House</title>
     <link rel="shortcut icon" href="imagens/Logotipo para loja de açai roxo simples.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #f0f8ff, #e6f7ff);
+            font-family: 'Arial', sans-serif;
+            color: black;
+        }
+        
+        nav.navbar {
+            background-color: #28a745;
+            padding: 15px;
+        }
+        
+        nav.navbar a.navbar-brand {
+            font-weight: bold;
+            color: #fff;
+        }
+        
+        .carousel-container {
+            margin-top: 30px;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .carousel-inner img {
+            height: 500px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+        
+        .container-main {
+            max-width: 1200px;
+            margin: auto;
+        }
+        
+        #cards, #features, #ads {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 50px 0;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+        }
+        
+        .card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            width: 300px;
+        }
+        
+        .card:hover {
+            transform: scale(1.05);
+        }
+        
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .btn-primary {
+            background-color: #ffcc00;
+            border: none;
+            color: black;
+        }
+        
+        .btn-primary:hover {
+            background-color: #ffaa00;
+        }
+        
+        #secundaria, .feature-section {
+            background-color: #fff;
+            color: black;
+            padding: 50px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+        }
+        
+        .img_secundaria {
+            width: 80%;
+            max-width: 600px;
+            border-radius: 15px;
+        }
+        
+        .aside-ad {
+            background-color: #ffeb3b;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            .carousel-inner img {
+                height: 300px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">FairHouse</a>
-            <a class="navbar-brand" href="comprar.html">Produtos</a>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">FairHouse</a>
     </nav>
 
-    <!-- Carousel -->
-    <div class="carousel-container mt-4">
+    <div class="carousel-container">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="imagens/feira1.jpg" alt="Feira de produtos">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="imagens/feira2.jpg" alt="Produtos frescos na feira">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="imagens/feira3.jpg" alt="Bancas de produtos variados">
+                    <img class="d-block w-100" src="imagens/feira1.jpg" alt="Primeiro Slide">
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </a>
         </div>
     </div>
 
-    <!-- Cards de Produtos -->
-    <div id="cards" class="container mt-4 d-flex flex-wrap justify-content-center">
-        <div class="card m-2" style="width: 18rem;">
-            <img class="card-img-top" src="imagens/camisa preta.webp" alt="Camisa preta">
+    <div id="cards">
+        <div class="card">
+            <img class="card-img-top" src="imagens/produto1.jpg" alt="Produto 1">
             <div class="card-body">
                 <h5 class="card-title">Produto 1</h5>
                 <p class="card-text">Descrição breve do produto.</p>
                 <a href="#" class="btn btn-primary">Comprar</a>
             </div>
         </div>
-
-        <div class="card m-2" style="width: 18rem;">
-            <img class="card-img-top" src="imagens/camisa preta.webp" alt="Camisa preta">
+        <div class="card">
+            <img class="card-img-top" src="imagens/produto2.jpg" alt="Produto 2">
             <div class="card-body">
                 <h5 class="card-title">Produto 2</h5>
                 <p class="card-text">Descrição breve do produto.</p>
                 <a href="#" class="btn btn-primary">Comprar</a>
             </div>
         </div>
-
-        <div class="card m-2" style="width: 18rem;">
-            <img class="card-img-top" src="imagens/camisa preta.webp" alt="Camisa preta">
-            <div class="card-body">
-                <h5 class="card-title">Produto 3</h5>
-                <p class="card-text">Descrição breve do produto.</p>
-                <a href="#" class="btn btn-primary">Comprar</a>
-            </div>
-        </div>
-
-        <div class="card m-2" style="width: 18rem;">
-            <img class="card-img-top" src="imagens/camisa preta.webp" alt="Camisa preta">
-            <div class="card-body">
-                <h5 class="card-title">Produto 4</h5>
-                <p class="card-text">Descrição breve do produto.</p>
-                <a href="#" class="btn btn-primary">Comprar</a>
-            </div>
-        </div>
     </div>
 
-    <!-- Rodapé -->
-    <footer class="bg-dark text-white text-center py-3 mt-4">
+    <footer>
         <p>Contato: contato@fairhouse.com | Telefone: (11) 99999-9999</p>
-        <p>Siga-nos no Instagram: <a href="#" class="text-light">@fairhouse_oficial</a></p>
+        <p>Siga-nos no Instagram: @fairhouse_oficial</p>
     </footer>
 
-    <!-- Efeito de scroll -->
     <script>
         function revealOnScroll() {
-            let elements = document.querySelectorAll('#cards, .carousel-container');
+            let elements = document.querySelectorAll('#cards, #secundaria, .feature-section, #ads');
             elements.forEach(el => {
                 let position = el.getBoundingClientRect().top;
                 let windowHeight = window.innerHeight;
                 if (position < windowHeight - 100) {
                     el.style.opacity = '1';
                     el.style.transform = 'translateY(0)';
-                    el.style.transition = 'all 0.5s ease-in-out';
                 }
             });
         }
-
+        
         window.addEventListener('scroll', revealOnScroll);
         revealOnScroll();
     </script>
 
-    <!-- Scripts do Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
