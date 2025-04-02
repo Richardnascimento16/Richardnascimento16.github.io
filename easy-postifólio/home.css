@@ -33,7 +33,9 @@ nav.navbar a.navbar-brand {
     margin: auto;
 }
 
-#cards, #features, #ads {
+#cards,
+#features,
+#ads {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -71,7 +73,8 @@ nav.navbar a.navbar-brand {
     background-color: #ffaa00;
 }
 
-#secundaria, .feature-section {
+#secundaria,
+.feature-section {
     background-color: #fff;
     color: black;
     padding: 50px;
@@ -118,11 +121,11 @@ footer {
     width: 1500px;
     height: auto;
     margin-left: 50px;
-    
+
     /* Oculta e move para a esquerda */
     opacity: 0;
     transform: translateX(-100%);
-    
+
     /* Transição suave */
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
@@ -143,7 +146,7 @@ footer {
     flex-direction: row-reverse;
     background-color: rgb(117, 53, 53);
     color: white;
-    border-radius: 20px;    
+    border-radius: 20px;
     width: 1600px;
     height: auto;
     margin-left: 250px;
@@ -151,7 +154,7 @@ footer {
     /* Oculta e move para a direita */
     opacity: 0;
     transform: translateX(100%);
-    
+
     /* Transição suave */
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
@@ -167,7 +170,7 @@ footer {
     align-items: center;
     background-color: rgb(175, 161, 0);
     color: white;
-    border-radius: 20px;    
+    border-radius: 20px;
     width: 1500px;
     height: auto;
     margin-left: 50px;
@@ -175,7 +178,7 @@ footer {
     /* Oculta e move para a esquerda */
     opacity: 0;
     transform: translateX(-100%);
-    
+
     /* Transição suave */
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
@@ -185,16 +188,15 @@ footer {
     transform: translateX(0);
 }
 
-#imagem{
+#imagem {
     margin-right: 150px;
 }
 
-img{
+img {
     width: 500px;
     height: 500px;
 }
 
-#sobre_imagem{
+#sobre_imagem {
     margin-left: 80px;
 }
-

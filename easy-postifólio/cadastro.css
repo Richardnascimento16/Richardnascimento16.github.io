@@ -13,8 +13,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 8%;  /* Reduzido para melhor centralização */
-    text-align: center; /* Para centralizar o texto corretamente */
+    margin-top: 8%;
+    /* Reduzido para melhor centralização */
+    text-align: center;
+    /* Para centralizar o texto corretamente */
 }
 
 #img_principal {
@@ -29,7 +31,8 @@ body {
     height: 45px;
     background-color: greenyellow;
     border: none;
-    border-radius: 5px; /* Suaviza as bordas */
+    border-radius: 5px;
+    /* Suaviza as bordas */
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
@@ -38,7 +41,8 @@ body {
 
 #button_principal:hover {
     background-color: green;
-    transform: scale(1.05); /* Efeito sutil ao passar o mouse */
+    transform: scale(1.05);
+    /* Efeito sutil ao passar o mouse */
 }
 
 @media screen and (max-width: 600px) {
