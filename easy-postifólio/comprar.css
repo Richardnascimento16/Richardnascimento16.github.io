@@ -1,0 +1,14 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+#produtos {
+    padding: 50px 0;
+}
+.produto-secao {
+    padding: 20px 0;
+}
+.produto-secao h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
